@@ -4,7 +4,7 @@ require_once "../config/database.php";
 
 // ambil data hasil submit dari form
 $username = mysqli_real_escape_string($conn, stripslashes(strip_tags(htmlspecialchars(trim($_POST['username'])))));
-$password = mysqli_real_escape_string($conn, stripslashes(strip_tags(htmlspecialchars(trim($_POST['password'])))));
+$password = md5(mysqli_real_escape_string($conn, stripslashes(strip_tags(htmlspecialchars(trim($_POST['password']))))));
 
 // pastikan username dan password adalah berupa huruf atau angka.
 

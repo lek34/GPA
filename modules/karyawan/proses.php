@@ -10,19 +10,23 @@ require_once "../../config/database.php";
 require_once "../../auth/cek.php";
 // jika user sudah login, maka jalankan perintah untuk insert, update, dan delete
     if ($_GET['act']=='insert') {
-        if (isset($_POST['addUser'])){
-            $username = mysqli_real_escape_string($conn, trim($_POST['username']));
-            $password  = md5(mysqli_real_escape_string($conn, trim($_POST['password'])));
-            $nama_user = mysqli_real_escape_string($conn, trim($_POST['nama_user']));
-            $hakakses = mysqli_real_escape_string($conn, trim($_POST['hakakses']));
-
+        if (isset($_POST['addKaryawan'])){
+            $nik = mysqli_real_escape_string($conn, trim($_POST['nik']));
+            $nama  = mysqli_real_escape_string($conn, trim($_POST['nama']));
+            $jenis_kelamin = mysqli_real_escape_string($conn, trim($_POST['jenis_kelamin']));
+            $unit = mysqli_real_escape_string($conn, trim($_POST['unit']));
+            $jabatan = mysqli_real_escape_string($conn, trim($_POST['jabatan']));
+            $lokasi = mysqli_real_escape_string($conn, trim($_POST['lokasi']));
+            $tahun = mysqli_real_escape_string($conn, trim($_POST['tahun']));
+            
+            $created_user = $_SESSION['id_user'];
            
-            $query = "INSERT INTO is_users (username, password, hak_akses,nama_user) VALUES ('$username', '$password', '$hakakses','$nama_user')";
+            $query = "INSERT INTO hrm_karyawan (nik, nama, jk, unit, jabatan, lokasi, tahun, created_user) VALUES ('$nik', '$nama', '$jenis_kelamin','$unit','$jabatan','$lokasi','$tahun','$created_user')";
             $execQuery = mysqli_query($conn, $query)
             or die('Ada kesalahan pada query insert : '.mysqli_error($conn));   
             
                 if ($execQuery){
-                    header("location: ../../main.php?module=User&alert=1");
+                    header("location: ../../main.php?module=dataKaryawan&alert=1");
                 }
         }
     }

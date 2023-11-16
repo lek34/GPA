@@ -51,6 +51,7 @@
                 break;  
                 case 8:
                   alertText(8, "Data dengan nama ini sudah ada");
+                break;
                 case 14:
                   alertText(14, "Data yang diisi tidak lengkap. Mohon diisi dengan benar");
           }

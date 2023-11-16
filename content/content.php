@@ -9,14 +9,11 @@ else{
     if ($_GET['module'] == 'beranda') {
 		include "modules/home/";
 	}
-    elseif ($_GET['module'] == 'tabel') {
-		include "modules/home/dashboard.php";
+	elseif ($_GET['module'] == 'dataKaryawan') {
+		include "modules/karyawan/view.php";
 	}
-	elseif ($_GET['module'] == 'dataItem') {
-		include "modules/master/barang/view.php";
-	}
-	elseif ($_GET['module'] == 'dataSup') {
-		include "modules/master/supplier/view.php";
+	elseif ($_GET['module'] == 'dataLokasi') {
+		include "modules/lokasi/view.php";
 	}
 	elseif ($_GET['module'] == 'historySup') {
 		include "modules/history/history_sup.php";

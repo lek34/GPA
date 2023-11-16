@@ -26,7 +26,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
-      <img src="dist/img/storage-stacks.png" width="50px" height="50px" style="margin-right: 10px;margin-left: 10px;">
+      <img src="dist/img/thinking.png" width="50px" height="50px" style="margin-right: 10px;margin-left: 10px;">
       <span class="brand-text font-weight-bold">GPA Solutions.</span>
     </a>
 

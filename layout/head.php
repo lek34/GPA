@@ -1,8 +1,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="dist/img/storage-stacks.png" rel="icon" crossorigin="anonymous" />
-<title>Point Of Sales</title>
+<link href="dist/img/thinking.png" rel="icon" crossorigin="anonymous" />
+<title>GPA Solutions</title>
 
 <!-- Google Font: Source Sans Pro -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
