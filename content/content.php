@@ -7,7 +7,7 @@ if (empty($_SESSION['username']) && empty($_SESSION['password'])){
 
 else{
     if ($_GET['module'] == 'beranda') {
-		include "modules/home/dashboard.php";
+		include "modules/home/";
 	}
     elseif ($_GET['module'] == 'tabel') {
 		include "modules/home/dashboard.php";

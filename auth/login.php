@@ -39,7 +39,7 @@
 <div class="login-box">
   <div class="login-logo">
       <img src="../dist/img/storage-stacks.png" width="70px" height="70px" style="margin-right: 10px;">
-      <span class="brand-text font-weight-bold">Point Of Sales</span>
+      <span class="brand-text font-weight-bold">GPA Solutions.</span>
   </div>
   <!-- /.login-logo -->
   <?php  
@@ -74,7 +74,7 @@
 
       <form action="login-check.php" method="post">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" name="username" placeholder="Email">
+          <input type="text" class="form-control" name="username" placeholder="Username">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
